@@ -1,0 +1,180 @@
+.container {
+  height: 90vh;
+  background-color: #ddd;
+}
+
+.threads {
+  height: 100%;
+  padding: 1em 0;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.card {
+  width: 70%;
+  padding: 0.4em 1.5em 0 1.5em;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 0.6em;
+}
+
+.hashtag {
+  color: rgb(83, 83, 255);
+}
+
+.username {
+  color: #333;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.date {
+  margin-top: -1.3em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: rgb(0 0 0 /50%);
+}
+
+.content {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin: 2em 0;
+  font-size: 1.15em;
+  color: #222;
+}
+
+.actionsContainer {
+  text-align: end;
+  bottom: 0;
+  border-top: 1px solid black;
+  padding: 0.8em 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitBtn {
+  color: white;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
+  margin-right: 0.7em;
+  background: #333;
+  padding: 0.4em 1em;
+  border: 1px solid #333;
+}
+
+.cancelBtn {
+  color: #333;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
+  margin-right: 0.7em;
+  background: transparent;
+  padding: 0.4em 1em;
+  border: 1px solid #333;
+}
+
+.editBtn {
+  color: rgb(0, 100, 0);
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
+  margin-right: 0.7em;
+  background: transparent;
+  padding: 0.4em 1em;
+  border: 1px solid rgb(0, 100, 0);
+}
+
+.deleteBtn {
+  color: rgb(200, 0, 0);
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
+  background: transparent;
+  padding: 0.4em 1em;
+  border: 1px solid rgb(200, 0, 0);
+}
+
+.submitBtn:hover {
+  background: #000;
+  cursor: pointer;
+}
+
+.cancelBtn:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  color: white;
+  background: rgb(0, 100, 0);
+  border: 1px solid rgb(0, 100, 0);
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  color: white;
+  background: rgb(200, 0, 0);
+  border: 1px solid rgb(200, 0, 0);
+  cursor: pointer;
+}
+
+.repliesbtn {
+  color: #444;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
+  padding: 0.2em 0.8em;
+  border: 1px solid #444;
+}
+
+.repliesbtn:hover {
+  color: white;
+  background-color: #444;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input {
+  width: 100%;
+  height: max-content;
+  resize: vertical;
+  padding: 1em;
+  margin: 1em 0 0;
+  font-size: 1em;
+  overflow: auto;
+  font-family: "Ubuntu", sans-serif;
+  outline: none;
+}
+
+.submitbtn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #444;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.8em 1.9em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.submitbtn:hover {
+  background-color: #333;
+}
+
+.editInput {
+  width: 100%;
+  outline: none;
+  margin: 0.5em 0 2em;
+  padding: 1em 0.3em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1em;
+}
