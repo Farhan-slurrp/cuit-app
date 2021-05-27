@@ -9,7 +9,7 @@ import styles from "../../styles/UserThreads.module.css";
 
 export async function getServerSideProps(context) {
   const res = await fetch(
-    `http://localhost:5000/api/threads/user/${context.params.id}`
+    `https://afternoon-temple-94147.herokuapp.com/api/threads/user/${context.params.id}`
   );
   const data = await res.json();
 

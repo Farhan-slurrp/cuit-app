@@ -7,7 +7,9 @@ import { useRouter } from "next/router";
 import { useGlobalContext } from "../custom-hooks/context";
 
 export async function getServerSideProps(context) {
-  const res = await fetch("http://localhost:5000/api/threads");
+  const res = await fetch(
+    "https://afternoon-temple-94147.herokuapp.com/api/threads"
+  );
   const data = await res.json();
 
   if (!data) {

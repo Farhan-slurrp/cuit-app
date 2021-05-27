@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
       content: e.target.content.value,
     });
     const res = await axios.post(
-      "http://localhost:5000/api/threads",
+      "https://afternoon-temple-94147.herokuapp.com/api/threads",
       formData,
       config
     );
@@ -46,7 +46,7 @@ const AppProvider = ({ children }) => {
       content: value,
     });
     const res = await axios.put(
-      `http://localhost:5000/api/threads/${threadId}`,
+      `https://afternoon-temple-94147.herokuapp.com/api/threads/${threadId}`,
       formData,
       config
     );
@@ -64,7 +64,7 @@ const AppProvider = ({ children }) => {
     };
 
     const res = await axios.delete(
-      `http://localhost:5000/api/threads/${threadId}`,
+      `https://afternoon-temple-94147.herokuapp.com/api/threads/${threadId}`,
       config
     );
 
@@ -84,7 +84,7 @@ const AppProvider = ({ children }) => {
       content: e.target.content.value,
     });
     const res = await axios.post(
-      `http://localhost:5000/api/comments/${threadId}`,
+      `https://afternoon-temple-94147.herokuapp.com/api/comments/${threadId}`,
       formData,
       config
     );
@@ -108,7 +108,7 @@ const AppProvider = ({ children }) => {
       content: value,
     });
     const res = await axios.put(
-      `http://localhost:5000/api/comments/${threadId}?commentId=${commentId}`,
+      `https://afternoon-temple-94147.herokuapp.com/api/comments/${threadId}?commentId=${commentId}`,
       formData,
       config
     );
@@ -126,7 +126,7 @@ const AppProvider = ({ children }) => {
     };
 
     const res = await axios.delete(
-      `http://localhost:5000/api/comments/${threadId}?commentId=${commentId}`,
+      `https://afternoon-temple-94147.herokuapp.com/api/comments/${threadId}?commentId=${commentId}`,
       config
     );
 
@@ -154,7 +154,7 @@ const AppProvider = ({ children }) => {
       password: e.target.password.value,
     });
     const res = await axios.post(
-      "http://localhost:5000/api/users/login",
+      "https://afternoon-temple-94147.herokuapp.com/api/users/login",
       formData,
       config
     );
@@ -181,7 +181,7 @@ const AppProvider = ({ children }) => {
       password: e.target.password.value,
     });
     const res = await axios.post(
-      "http://localhost:5000/api/users/register",
+      "https://afternoon-temple-94147.herokuapp.com/api/users/register",
       formData,
       config
     );
