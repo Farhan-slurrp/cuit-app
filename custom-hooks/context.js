@@ -138,7 +138,7 @@ const AppProvider = ({ children }) => {
     const logout = confirm("Are you sure to logout?");
     if (logout) {
       setTokenInfo(null);
-      router.back();
+      router.push("/");
     }
   };
 
