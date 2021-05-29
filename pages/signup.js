@@ -43,6 +43,7 @@ const SignUp = () => {
               required
             />
             <button
+              type="button"
               onClick={() => setVisibility(!visibility)}
               className="togglePassword"
             >
