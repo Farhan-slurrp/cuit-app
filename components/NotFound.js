@@ -4,11 +4,7 @@ const PageNotFound = ({ msg }) => {
   return (
     <>
       <div className="container">
-        <Image
-          src="https://cuitter.netlify.app/notfound.gif?url=%2Fnotfound.gif&w=384&q=75"
-          width={300}
-          height={300}
-        />
+        <Image src="/notfound.gif" width={300} height={300} />
         <p className="msg">{msg}</p>
       </div>
 
