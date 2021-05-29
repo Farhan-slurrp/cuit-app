@@ -163,7 +163,7 @@ const AppProvider = ({ children }) => {
     if (data.success) {
       setTokenInfo(data);
       e.target.reset();
-      router.back();
+      router.push("/");
     }
     return data;
   };
@@ -190,7 +190,7 @@ const AppProvider = ({ children }) => {
     if (data.success) {
       setTokenInfo(data);
       e.target.reset();
-      router.back();
+      router.push("/");
     }
     return data;
   };

@@ -78,3 +78,15 @@ a {
   font-weight: 500;
   font-size: 1.05em;
 }
+
+.togglePassword {
+  margin-top: 0.3em;
+  margin-bottom: -1em;
+  padding: 0.2em;
+  width: 30%;
+  text-align: center;
+  border: 1px solid #333;
+  background-color: transparent;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+}

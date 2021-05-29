@@ -4,6 +4,7 @@ import Head from "next/head";
 
 const Login = () => {
   const [data, setData] = useState(null);
+  const [visibility, setVisibility] = useState(false);
   const { tokenInfo, onLogin } = useGlobalContext();
 
   const handleSubmit = async (e) => {
@@ -34,7 +35,18 @@ const Login = () => {
             <label htmlFor="username">Username: </label>
             <input type="text" name="username" id="username" required />
             <label htmlFor="password">Password: </label>
-            <input type="text" name="password" id="password" required />
+            <input
+              type={visibility ? "text" : "password"}
+              name="password"
+              id="password"
+              required
+            />
+            <button
+              onClick={() => setVisibility(!visibility)}
+              className="togglePassword"
+            >
+              {visibility ? "Hide Password" : "Show Password"}
+            </button>
           </form>
         </div>
         <div className="submit-btn">
